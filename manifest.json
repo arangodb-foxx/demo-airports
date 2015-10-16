@@ -1,11 +1,11 @@
 {
-  "name": "ui-template",
+  "name": "demo-airports",
   "thumbnail": "thumbnail.png",
   "version": "1.0.0",
-  "description": "A minimalistic ui template for ArangoDB for foxx using pure css.",
+  "description": "Flight routes demonstration using ArangoDB foxx.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arangodb/foxx-ui-template.git"
+    "url": "https://github.com/arangodb-foxx/demo-airports.git"
   },
   "author": "ArangoDB GmbH",
   "contributors": [
@@ -15,7 +15,7 @@
     }
   ],
   "keywords": [
-    "ui-template"
+    "arangodb foxx airports"
   ],
   "engines": {
     "arangodb": "2.7"
@@ -23,8 +23,10 @@
   "files": {
     "/index.html": "build/index.html",
     "/app.js": "build/app.js",
+    "/lib.js": "build/lib.js",
     "/style.css": "build/style.css",
     "/fonts": "frontend/fonts",
+    "/ammapLibs": "frontend/js/lib/ammap/plugins/export/libs",
     "/img": "frontend/img"
   },
   "defaultDocument": "index.html"

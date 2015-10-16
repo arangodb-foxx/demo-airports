@@ -12,8 +12,21 @@
           'frontend/html/*.html'
         ],
         js: [
-          'frontend/js/lib/*.js',
-          'frontend/js/*.js'
+          'frontend/js/models/*.js',
+          'frontend/js/collections/*.js',
+          'frontend/js/views/*.js',
+          'frontend/js/routers/*.js',
+          'frontend/js/app.js',
+          '!frontend/js/lib/*.js'
+        ],
+        lib: [
+          'frontend/js/lib/jquery-1.11.3.min.js',
+          'frontend/js/lib/underscore-min.js',
+          'frontend/js/lib/backbone-min.js',
+          "frontend/js/lib/lunr.min.js",
+          "frontend/js/lib/ammap/ammap.js",
+          "frontend/js/lib/ammap/maps/js/usa2High.js",
+          "frontend/js/lib/ammap/themes/light.js"
         ],
         scss: [
           'frontend/scss/*.scss'
@@ -45,6 +58,9 @@
       concat_in_order: {
         js: {
           files: {
+            'build/lib.js': [
+              '<%=project.lib %>'
+            ],
             'build/app.js': [
               '<%=project.js %>'
             ]
