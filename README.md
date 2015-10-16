@@ -1,3 +1,3 @@
-# demo-airportse
+# demo-airport
 
 # currently in development
